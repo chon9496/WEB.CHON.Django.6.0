@@ -314,7 +314,7 @@ crear carpeta about y dentro de ella about.html
     from django.views.generic import View
 
 
-    class aboutView(View):
+    class bitacoraView(View):
         def get(self,request, *args, **kwargs):
             context={
                 
@@ -324,12 +324,12 @@ crear carpeta about y dentro de ella about.html
 ## bitacora/urls.py:
 
     from django.urls import path
-    from .views import aboutView
+    from .views import bitacoraView
 
     app_name="bitacora"
 
     urlpatterns = [
-        path('', aboutView.as_view(), name="home"),
+        path('', bitacoraView.as_view(), name="home"),
 
     ]
 
@@ -437,5 +437,37 @@ qwerty852as46df79
     from .models import User
 
     admin.site.register(User)
+
+# ⋖⥐⋗○_⫷█░⫸Δ⋖_⋗》¬﹝⍨﹞⌐《⋖_⋗Δ⫷░█⫸_○⋖⥐⋗ 
+
+# ⌘⥏¤∵∴┊⊰⫷⋑_》╣≜ 〔 [Modelos] 〕≜╠《_⋐⫸⊱┊∴∵¤⥑⌘
+
+aca estan los modelos
+
+# ⌘⥏¤∵∴┊⊰⫷⋑_》╣≜ 〔 [Bitacora] 〕≜╠《_⋐⫸⊱┊∴∵¤⥑⌘
+
+# modelos:
+
+## bitacora/models.py:
+
+    class Post(models.Model):
+        author = models.ForeignKey(User, on_delete=models.CASCADE)
+        title        = models.CharField(max_length=150)
+        content      = models.TextField()
+        thumbnail    = models.ImageField()
+        publish_date = models.DateField(auto_now_add=True)
+        last_updated = models.DateField(auto_now=True)
+        def __str__(self):
+            return self.title
+            
+## Migraciones:
+
+### Makemigrations
+    
+    python manage.py makemigrations
+
+### Migrate
+
+    python manage.py migrate
 
 # ⋖⥐⋗○_⫷█░⫸Δ⋖_⋗》¬﹝⍨﹞⌐《⋖_⋗Δ⫷░█⫸_○⋖⥐⋗ 
