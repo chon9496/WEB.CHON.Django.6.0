@@ -439,3 +439,35 @@ qwerty852as46df79
     admin.site.register(User)
 
 # ⋖⥐⋗○_⫷█░⫸Δ⋖_⋗》¬﹝⍨﹞⌐《⋖_⋗Δ⫷░█⫸_○⋖⥐⋗ 
+
+# ⌘⥏¤∵∴┊⊰⫷⋑_》╣≜ 〔 [Modelos] 〕≜╠《_⋐⫸⊱┊∴∵¤⥑⌘
+
+aca estan los modelos
+
+# ⌘⥏¤∵∴┊⊰⫷⋑_》╣≜ 〔 [Bitacora] 〕≜╠《_⋐⫸⊱┊∴∵¤⥑⌘
+
+# modelos:
+
+## bitacora/models.py:
+
+    class Post(models.Model):
+        author = models.ForeignKey(User, on_delete=models.CASCADE)
+        title        = models.CharField(max_length=150)
+        content      = models.TextField()
+        thumbnail    = models.ImageField()
+        publish_date = models.DateField(auto_now_add=True)
+        last_updated = models.DateField(auto_now=True)
+        def __str__(self):
+            return self.title
+            
+## Migraciones:
+
+### Makemigrations
+    
+    python manage.py makemigrations
+
+### Migrate
+
+    python manage.py migrate
+
+# ⋖⥐⋗○_⫷█░⫸Δ⋖_⋗》¬﹝⍨﹞⌐《⋖_⋗Δ⫷░█⫸_○⋖⥐⋗ 
