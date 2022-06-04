@@ -13,10 +13,7 @@ urlpatterns = [
     path('contacto/', include('contacto.urls',namespace='contacto')),
     path('curriculum/', include('curriculum.urls',namespace='curriculum')),
     path('about/', include('about.urls',namespace='about')),
-    
-    
-    
-    
+    path('bitacora/', include('bitacora.urls',namespace='bitacora')),
 ]
 
 if settings.DEBUG: 
