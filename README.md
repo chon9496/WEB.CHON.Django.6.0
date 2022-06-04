@@ -314,7 +314,7 @@ crear carpeta about y dentro de ella about.html
     from django.views.generic import View
 
 
-    class aboutView(View):
+    class bitacoraView(View):
         def get(self,request, *args, **kwargs):
             context={
                 
@@ -324,12 +324,12 @@ crear carpeta about y dentro de ella about.html
 ## bitacora/urls.py:
 
     from django.urls import path
-    from .views import aboutView
+    from .views import bitacoraView
 
     app_name="bitacora"
 
     urlpatterns = [
-        path('', aboutView.as_view(), name="home"),
+        path('', bitacoraView.as_view(), name="home"),
 
     ]
 
