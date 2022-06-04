@@ -4,9 +4,11 @@ from django.shortcuts import render
 from django.views.generic import View
 
 
-class aboutView(View):
+class bitacoraView(View):
     def get(self,request, *args, **kwargs):
         context={
 
         }
         return render(request,'bitacora/bitacora.html', context)
+    
+    
