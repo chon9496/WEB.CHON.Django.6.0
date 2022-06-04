@@ -26,6 +26,9 @@ INSTALLED_APPS = [
     'tailwind','theme',
     'contacto','curriculum',
     'about','bitacora',
+    'django.contrib.sites',
+    'allauth','allauth.account',
+    'allauth.socialaccount',
     
     
 ]
@@ -106,3 +109,13 @@ MEDIA_URL   =  '/media/'
 MEDIA_ROOT  =  os.path.join(BASE_DIR, 'media_static')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',
+    'allauth.account.auth_backends.AuthenticationBackend',
+]
+
+
+SITE_ID = 1
+
+AUTH_USER_MODEL = 'bitacora.User'
