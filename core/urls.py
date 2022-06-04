@@ -7,6 +7,10 @@ from .views import HomeView
 
 
 urlpatterns = [
+    
+    path('accounts/', include('allauth.urls')),
+    
+    
     path('admin/', admin.site.urls),
     path('', HomeView.as_view(), name="home"),
     
