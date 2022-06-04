@@ -253,3 +253,51 @@ crear carpeta contacto y dentro de ella contacto.html
 crear carpeta curriculum y dentro de ella curriculum.html
 
 # ⋖⥐⋗○_⫷█░⫸Δ⋖_⋗》¬﹝⍨﹞⌐《⋖_⋗Δ⫷░█⫸_○⋖⥐⋗ 
+
+# ⌘⥏¤∵∴┊⊰⫷⋑_》╣≜ 〔 [About] 〕≜╠《_⋐⫸⊱┊∴∵¤⥑⌘
+
+# About: 
+    
+    django-admin startapp about
+
+## about/views.py: 
+
+    from django.shortcuts import render
+    from django.views.generic import View
+
+
+    class aboutView(View):
+        def get(self,request, *args, **kwargs):
+            context={
+                
+            }
+            return render(request,'about/about.html', context)
+    
+## about/urls.py:
+
+    from django.urls import path
+    from .views import aboutView
+
+    app_name="about"
+
+    urlpatterns = [
+        path('', aboutView.as_view(), name="about"),
+
+    ]
+
+## core/urls.py:
+
+    path('about/', include('about.urls',namespace='about')),
+
+## core/settings.py:
+
+*INSTALLED_APPS*
+
+    'about',
+
+# ⋖⥐⋗○_⫷█░⫸Δ⋖_⋗》¬﹝⍨﹞⌐《⋖_⋗Δ⫷░█⫸_○⋖⥐⋗ 
+
+# templates
+crear carpeta about y dentro de ella about.html
+
+# ⋖⥐⋗○_⫷█░⫸Δ⋖_⋗》¬﹝⍨﹞⌐《⋖_⋗Δ⫷░█⫸_○⋖⥐⋗ 

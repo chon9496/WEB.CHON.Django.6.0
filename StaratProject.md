@@ -3,48 +3,50 @@
 Aca estaran las otras vistas las vistas 
 secudarias...
 
-# ⌘⥏¤∵∴┊⊰⫷⋑_》╣≜ 〔 [Curriculum] 〕≜╠《_⋐⫸⊱┊∴∵¤⥑⌘
+# ⌘⥏¤∵∴┊⊰⫷⋑_》╣≜ 〔 [About] 〕≜╠《_⋐⫸⊱┊∴∵¤⥑⌘
 
-# Curriculum: 
+# About: 
     
-    django-admin startapp curriculum
+    django-admin startapp about
 
-## curriculum/views.py: 
-    
+## about/views.py: 
+
+    from django.shortcuts import render
     from django.views.generic import View
 
-    class CurriView(View):
+
+    class aboutView(View):
         def get(self,request, *args, **kwargs):
             context={
                 
             }
-            return render(request,'curriculum/curriculum.html', context)
-
-## curriculum/urls.py:
+            return render(request,'about/about.html', context)
+    
+## about/urls.py:
 
     from django.urls import path
-    from .views import CurriView
+    from .views import aboutView
 
-    app_name="curriculum"
+    app_name="about"
 
     urlpatterns = [
-        path('', CurriView.as_view(), name="home"),
+        path('', aboutView.as_view(), name="about"),
 
     ]
 
 ## core/urls.py:
 
-    path('curriculum/', include('curriculum.urls',namespace='curriculum')),
+    path('about/', include('about.urls',namespace='about')),
 
 ## core/settings.py:
 
 *INSTALLED_APPS*
 
-    'curriculum',
-    
+    'about',
+
 # ⋖⥐⋗○_⫷█░⫸Δ⋖_⋗》¬﹝⍨﹞⌐《⋖_⋗Δ⫷░█⫸_○⋖⥐⋗ 
 
 # templates
-crear carpeta curriculum y dentro de ella curriculum.html
+crear carpeta about y dentro de ella about.html
 
 # ⋖⥐⋗○_⫷█░⫸Δ⋖_⋗》¬﹝⍨﹞⌐《⋖_⋗Δ⫷░█⫸_○⋖⥐⋗ 

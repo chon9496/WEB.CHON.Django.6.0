@@ -25,6 +25,8 @@ INSTALLED_APPS = [
     'core',
     'tailwind','theme',
     'contacto','curriculum',
+    'about',
+    
     
 ]
 
