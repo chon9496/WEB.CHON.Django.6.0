@@ -32,7 +32,6 @@ Ejecutamos en la terminal
 
 # ⋖⥐⋗○_⫷█░⫸Δ⋖_⋗》¬﹝⍨﹞⌐《⋖_⋗Δ⫷░█⫸_○⋖⥐⋗ 
 
-
 # ⌘⥏¤⊰⫷⋑_》╣≜ 〔 [Core] 〕≜╠《_⋐⫸⊱¤⥑⌘
 
 # Startproject:
