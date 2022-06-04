@@ -24,7 +24,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'core',
     'tailwind','theme',
-    'contacto',
+    'contacto','curriculum',
     
 ]
 

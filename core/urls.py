@@ -11,6 +11,8 @@ urlpatterns = [
     path('', HomeView.as_view(), name="home"),
     
     path('contacto/', include('contacto.urls',namespace='contacto')),
+    path('curriculum/', include('curriculum.urls',namespace='curriculum')),
+    
     
     
 ]

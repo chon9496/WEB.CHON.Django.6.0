@@ -3,50 +3,48 @@
 Aca estaran las otras vistas las vistas 
 secudarias...
 
-# ⌘⥏¤∵∴┊⊰⫷⋑_》╣≜ 〔 [Contacto] 〕≜╠《_⋐⫸⊱┊∴∵¤⥑⌘
+# ⌘⥏¤∵∴┊⊰⫷⋑_》╣≜ 〔 [Curriculum] 〕≜╠《_⋐⫸⊱┊∴∵¤⥑⌘
 
-# Contacto: 
+# Curriculum: 
     
-    django-admin startapp contacto
+    django-admin startapp curriculum
 
-## contacto/views.py: 
-
-    from django.shortcuts import render
+## curriculum/views.py: 
+    
     from django.views.generic import View
 
-
-    class ContactoView(View):
+    class CurriView(View):
         def get(self,request, *args, **kwargs):
             context={
                 
             }
-            return render(request,'contacto/contacto.html', context)
-    
-## contacto/urls.py:
+            return render(request,'curriculum/curriculum.html', context)
+
+## curriculum/urls.py:
 
     from django.urls import path
-    from .views import ContactoView
+    from .views import CurriView
 
-    app_name="contacto"
+    app_name="curriculum"
 
     urlpatterns = [
-        path('', ContactoView.as_view(), name="home"),
+        path('', CurriView.as_view(), name="home"),
 
     ]
 
 ## core/urls.py:
 
-    path('contacto/', include('contacto.urls',namespace='contacto')),
+    path('curriculum/', include('curriculum.urls',namespace='curriculum')),
 
 ## core/settings.py:
 
 *INSTALLED_APPS*
 
-    'contacto',
-
+    'curriculum',
+    
 # ⋖⥐⋗○_⫷█░⫸Δ⋖_⋗》¬﹝⍨﹞⌐《⋖_⋗Δ⫷░█⫸_○⋖⥐⋗ 
 
 # templates
-crear carpeta contacto y dentro de ella contacto.html
+crear carpeta curriculum y dentro de ella curriculum.html
 
-# ⋖⥐⋗○_⫷█░⫸Δ⋖_⋗》¬﹝⍨﹞⌐《⋖_⋗Δ⫷░█⫸_○⋖⥐⋗
+# ⋖⥐⋗○_⫷█░⫸Δ⋖_⋗》¬﹝⍨﹞⌐《⋖_⋗Δ⫷░█⫸_○⋖⥐⋗ 
