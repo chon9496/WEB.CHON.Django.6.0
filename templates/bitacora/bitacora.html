@@ -4,150 +4,163 @@
 
 <!--carousel-->
 <div id="carouselExampleCrossfade" class="carousel slide carousel-fade relative" data-bs-ride="carousel">
+
     <div class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
-        <button type="button" data-bs-target="#carouselExampleCrossfade" data-bs-slide-to="0" class="active"
-            aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCrossfade" data-bs-slide-to="1"
-            aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCrossfade" data-bs-slide-to="2"
-            aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCrossfade" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCrossfade" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCrossfade" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
+
     <div class="carousel-inner relative w-full overflow-hidden">
+        
         <div class="carousel-item active float-left w-full">
             <img src="{% static 'img/imagencarrousel02.jpg' %}" class="block w-full" alt="Wild Landscape" />
         </div>
+        
         <div class="carousel-item float-left w-full">
             <img src="{% static 'img/imagencarrousel02.jpg' %}" class="block w-full" alt="Camera" />
         </div>
+        
         <div class="carousel-item float-left w-full">
             <img src="{% static 'img/imagencarrousel03.jpg' %}" class="block w-full" alt="Exotic Fruits" />
         </div>
+
     </div>
-    <button
-        class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
-        type="button" data-bs-target="#carouselExampleCrossfade" data-bs-slide="prev">
+
+    <button class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0" type="button" data-bs-target="#carouselExampleCrossfade" data-bs-slide="prev">
         <span class="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
     </button>
+    
     <button
         class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
         type="button" data-bs-target="#carouselExampleCrossfade" data-bs-slide="next">
         <span class="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
     </button>
+
 </div>
 <!--carousel-->
 
-<div class="row row-cols-1 row-cols-md-3 g-4">
 
-    <div class="flex justify-center">
-        <div class="rounded-lg shadow-lg bg-white max-w-sm">
 
-            <img class="rounded-t-lg" src="{% static 'img/web.jpg' %}" alt="" />
-            </a>
+
+
+
+<div class="row row-cols-1 row-cols-md-3 ">
+
+    <div class="flex justify-center opacity-75">
+
+        <div id="profile" class="rounded-lg shadow-lg bg-white ">
+
+            <img class="rounded-t-lg" src="{% static 'img/web.jpg' %}" alt=""/>
+
             <div class="p-6">
 
-                <h5 class="text-gray-900 text-xl font-medium mb-2">
-                   APLICACIONES WEB
-                   <hr>
-                    <div class="container">
+                <h5>APLICACIONES WEB</h5>
 
-                    </div>
-                </h5>
+                <hr>
+                
                 <p class="text-gray-700 text-base mb-4">
-en este espacio podras descargar y cargar codigo es un espacio creado para la comunidad en este gigantesco mundo de internet
+                    en este espacio podras descargar y cargar codigo es un espacio creado para la comunidad en este
+                    gigantesco mundo de internet
                 </p>
 
-                <button type="button"
-                    class=" inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Compartir</button>
+                <button type="button" class=" inline-block px-6 py-2 bg-green-600 font-medium text-xs rounded hover:bg-green-800 hover:shadow-lg focus:bg-green-300 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-500 active:shadow-lg transition duration-150 ease-in-out">Agregar</button>
 
-                <a type="button"
-                    class=" inline-block px-6 py-2.5 bg-blue-600 text-dark bg-transparent font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
-                    href="{% url 'bitacora:web' %}">Lista</a>
+                <a type="button" class=" inline-block px-6 py-2 bg-green-600 font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-green-800 hover:shadow-lg focus:bg-green-300 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-800 active:shadow-lg transition duration-150 ease-in-out" href="{% url 'bitacora:web' %}">Ver..</a>
 
             </div>
-            
+
         </div>
+
     </div>
 
-    <div class="flex justify-center">
-        <div class="rounded-lg shadow-lg bg-white max-w-sm">
+    <div class="flex justify-center opacity-75">
+
+        <div id="profile1" class="rounded-lg shadow-lg bg-white ">
 
             <img class="rounded-t-lg" src="{% static 'img/desktop.jpg' %}" alt="" />
-            </a>
+
             <div class="p-6">
 
-                <h5 class="text-gray-900 text-xl font-medium mb-2">
-                   APLICACIONES DE ESCRITORIO</h5>
-                   <hr> 
+                <h5>APLICACIONES DE ESCRITORIO</h5>
+
+                <hr>
+                
                 <p class="text-gray-700 text-base mb-4">
-        en este espacio podras descargar y cargar codigo es un espacio creado para la comunidad en este gigantesco mundo de internet
+                    en este espacio podras descargar y cargar codigo es un espacio creado para la comunidad en este
+                    gigantesco mundo de internet
                 </p>
 
-                <button type="button"
-                    class=" inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Compartir</button>
-                <a type="button"
-                    class=" inline-block px-6 py-2.5 bg-blue-600 text-dark bg-transparent font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
-                    href="{% url 'bitacora:desktop' %}">Lista</a>
+                <button type="button" class=" inline-block px-6 py-2 bg-green-600 font-medium text-xs rounded hover:bg-green-800 hover:shadow-lg focus:bg-green-300 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-500 active:shadow-lg transition duration-150 ease-in-out">Agregar</button>
+                
+                <a type="button" class=" inline-block px-6 py-2 bg-green-600 font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-green-800 hover:shadow-lg focus:bg-green-300 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-800 active:shadow-lg transition duration-150 ease-in-out" href="{% url 'bitacora:desktop' %}">Ver..</a>
 
             </div>
 
         </div>
+        
     </div>
 
-    <div class="flex justify-center">
-        <div class="rounded-lg shadow-lg bg-white max-w-sm">
+    <div class="flex justify-center opacity-75">
+
+        <div id="profile2" class="rounded-lg shadow-lg bg-white ">
 
             <img class="rounded-t-lg" src="{% static 'img/otros.jpg' %}" alt="" />
-            </a>
+
             <div class="p-6">
 
-                <h5 class="text-gray-900 text-xl font-medium mb-2">
-                   APLICACIONES OTRAS
-                <hr></h5>
+                <h5>APLICACIONES OTRAS</h5>
+
+                <hr>
+
                 <p class="text-gray-700 text-base mb-4">
-        en este espacio podras descargar y cargar codigo es un espacio creado para la comunidad en este gigantesco mundo de internet
+                    en este espacio podras descargar y cargar codigo es un espacio creado para la comunidad en este
+                    gigantesco mundo de internet
                 </p>
 
-                <button type="button"
-                    class=" inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Compartir</button>
-                <a type="button"
-                    class=" inline-block px-6 py-2.5 bg-blue-600 text-dark bg-transparent font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
-                    href="{% url 'bitacora:otro' %}">Lista</a>
+                <button type="button" class=" inline-block px-6 py-2 bg-green-600 font-medium text-xs rounded hover:bg-green-800 hover:shadow-lg focus:bg-green-300 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-500 active:shadow-lg transition duration-150 ease-in-out">Agregar</button>
+                
+                <a type="button" class=" inline-block px-6 py-2 bg-green-600 font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-green-800 hover:shadow-lg focus:bg-green-300 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-800 active:shadow-lg transition duration-150 ease-in-out"href="{% url 'bitacora:otro' %}">Ver..</a>
 
             </div>
-            
+
         </div>
+        
     </div>
 
 </div>
 
-<div class="row items-center " >
+<div class="row items-center opacity-75" >
 
     <div class="col-sm-6  ">
 
-        
         <div class="flex justify-center  ">
-            <div class="flex flex-col md:flex-row md:max-w-xl rounded-lg bg-white shadow-lg">
-                <img class=" w-full h-96 md:h-auto object-cover md:w-48 rounded-t-lg md:rounded-none md:rounded-l-lg"
-                    src="{% static 'img/l0.jpg' %}" alt="" />
-                <div class=" p-6 flex flex-col justify-start">
-                    <h5 class="text-gray-900 text-xl font-medium mb-2">Publicacion de la WEB</h5>
-                    <p class="text-gray-700 text-base mb-4">
-                        Publicacion del sitio WEB 2022
-                        <hr>
-                  Primera publicacion de la pagina web 
-                  <br>
-                  Por este medio subire unos pequeños scripts y se podran descarcar para luego usar 
-                  <br>
-                  <hr>
-                  <br>
+            <div class="flex flex-col md:flex-row md:max-w-xl rounded-lg bg-white shadow-lg "id="profile3" >
 
-                  El sitio esta en Version Alfa.6.0
-                    </p>
+                <img class=" w-full h-96 md:h-auto object-cover md:w-48 rounded-t-lg md:rounded-none md:rounded-l-lg" src="{% static 'img/teclado.jpg' %}" alt="" />
+
+                <div class=" p-6 flex flex-col justify-start">
                     
+                    <h5 class="text-gray-700 text-xl font-medium mb-2">Publicacion del sitio we</h5>
+                    
+                    <p class="text-gray-700 text-base mb-4">Primera Publicacion del sitio WEB Junio -- del '22 <hr>
+                        Creada por David Arango Lucar 
+                        <br>Contacto
+                        <br>Curriculum
+                        <br>bitacoraa'
+
+                        <hr>
+                        
+                        El sitio esta en Version Alfa.6.0
+                        
+                    </p>
+
                     <p class="text-gray-600 text-xs">publicado en</p>
+
                 </div>
+                
             </div>
         </div>
 
