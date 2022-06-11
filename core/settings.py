@@ -89,7 +89,8 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
-NPM_BIN = "/usr/bin/npm"
+#NPM_BIN = "/usr/bin/npm"
+NPM_BIN_PATH = r"C:\Program Files\nodejs\npm.cmd"
 
 LANGUAGE_CODE = 'en-us'
 
